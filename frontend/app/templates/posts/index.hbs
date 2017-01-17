@@ -1,0 +1,7 @@
+{{#each model as |post|}}
+	<h4>
+		{{link-to "post.show", post.id}} 
+			{{post.title}} 
+		{{/link-to}}
+	</h4>
+{{/each}}
