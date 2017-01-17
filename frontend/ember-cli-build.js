@@ -4,6 +4,23 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
+    emberFroala: {
+      fontAwesome: true,
+      theme: 'gray',
+      lang: 'en_us',
+      plugins: [
+        'char_counter', 
+        'colors', 
+        'entities',
+        'font_family',
+        'font_size',
+        'inline_style',
+        'lists',
+        'table',
+        'url',
+        'video'
+      ]
+    }
     // Add options here
   });
 

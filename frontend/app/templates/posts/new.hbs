@@ -1,0 +1,15 @@
+<h3>Post New</h3>
+<form>
+  <div>
+    <label>Title:</label>
+    {{input type="text" value=model.title}}
+  </div>
+  <div>
+    <label>Content:</label>
+    {{froala-editor customButtons=froalaEditor.buttons}}
+  </div>
+  <div>
+	<button {{action 'save'}}>Save</button>
+    <button {{action 'cancel'}}>Cancel</button>
+  </div>
+</form>
