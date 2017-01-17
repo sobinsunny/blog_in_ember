@@ -1,4 +1,5 @@
 temp show
 <h2>{{model.title}}</h2>
-  <h3>{{model.content}}</h3>
-  <h4> created by : {{model.user}}</h4> 
+<h3>{{model.content}}</h3>
+<h4>by:- {{model.user_id.name}}</h4>
+{{#link-to "posts.index"}}All Posts{{/link-to}}
