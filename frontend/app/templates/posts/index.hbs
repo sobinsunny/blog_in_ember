@@ -1,4 +1,8 @@
 <h1>All Posts</h1>
+{{#link-to 'posts.new'}}
+	New Post
+{{/link-to}}
+
 {{#each model as |post|}}
 	<h3>
 		{{#link-to 'posts.show' post}}
@@ -6,3 +10,4 @@
 		{{/link-to}}
 	</h3>
 {{/each}}
+
