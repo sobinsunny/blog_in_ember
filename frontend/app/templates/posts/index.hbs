@@ -1,12 +1,12 @@
 <h1>All Posts</h1>
-{{#link-to 'posts.new'}}
+
+{{#link-to 'users.new'}}
 	New Post
 {{/link-to}}
-
-{{#each model as |post|}}
+{{#each posts as |post|}}
 	<h3>
 		{{#link-to 'posts.show' post}}
-			{{post.title}}
+			{{post.title}} - {{post.user.name}}
 		{{/link-to}}
 	</h3>
 {{/each}}

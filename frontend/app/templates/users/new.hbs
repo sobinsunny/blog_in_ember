@@ -1,12 +1,12 @@
 <h3>Post New</h3>
 <form>
   <div>
-    <label>Title:</label>
-    {{input type="text" value=model.title}}
+    <label>user:</label>
+    {{input type="text" value=model.name}}
   </div>
   <div>
     <label>Content:</label>
-    	{{froala-editor customButtons=froalaEditor.buttons params=froalaEditor.params value= model.content}}
+    	{{input type="text" value=model.email}}
    </div>
   <div>
 	<button {{action 'save'}}>Save</button>

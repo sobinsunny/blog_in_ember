@@ -21,10 +21,11 @@ export default Ember.Route.extend({
       console.log(event);
       console.log(editor);
     },
-    save: function(event, editor) {
-      console.log("Content Changed");
-      console.log(event);
-      console.log(editor);
+    save() {
+      const newPost = this.store.createRecord('post', this.currentModel);
+      newPost.save().then((post) => {
+        this.transitionTo('posts.show', post);
+      });
     },
     cancel() {
       this.transitionTo('posts.new');
